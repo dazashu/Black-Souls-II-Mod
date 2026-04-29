@@ -1,11 +1,11 @@
 # =============================================================================
-# Creative Mode v0.7 — F2 creative-mode menu for Black Souls II
+# Creative Mode v1.0 — F2 creative-mode menu for Black Souls II
 # (Module name AdminMenu retained internally for compatibility with existing
 #  hooks; only the user-facing labels say "Creative Mode".)
 # =============================================================================
 
 module AdminMenu
-  VERSION = "0.7.0".freeze
+  VERSION = "1.0.0".freeze
   TITLE   = "Creative Mode".freeze
 
   begin
