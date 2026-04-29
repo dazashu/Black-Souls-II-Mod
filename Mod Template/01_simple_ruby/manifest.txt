@@ -1,0 +1,5 @@
+name:    Simple Ruby Mod (template)
+version: 0.1
+author:  dazashu
+desc:    Tiny example showing the alias_method monkey-patch pattern.
+         Hooks Game_Player#increase_steps to award 5 souls per step.

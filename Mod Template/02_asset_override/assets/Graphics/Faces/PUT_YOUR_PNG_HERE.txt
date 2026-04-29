@@ -1,0 +1,7 @@
+Drop your PNG file here.
+
+The filename must match the original asset name (use the recon dump to find it):
+  mod_loader/docs/recon/all/Graphics/Faces/
+
+Example: to replace Actor1.png, drop your edited Actor1.png in this folder.
+The mod loader will detect it at startup and redirect the game to it.

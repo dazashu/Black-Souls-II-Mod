@@ -1,0 +1,5 @@
+Drop your .ogg / .mp3 / .wav here.
+
+Filename must match the original BGM name. To find originals, RGSS3 looks
+in BLACK SOULS II/Audio/BGM/ — those files are loose (not in Game.rgss3a),
+so you can also browse them directly.

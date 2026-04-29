@@ -1,0 +1,5 @@
+name:    Data Tweak (template)
+version: 0.1
+author:  dazashu
+desc:    Mutates $data_items / $data_weapons / etc. at runtime.
+         Example: every consumable becomes a 1g full-HP heal.

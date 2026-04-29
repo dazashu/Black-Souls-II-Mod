@@ -1,0 +1,4 @@
+name:    Asset Override (template)
+version: 0.1
+author:  dazashu
+desc:    Drop any image or audio file under assets/ to override the original.

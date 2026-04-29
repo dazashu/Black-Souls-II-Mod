@@ -1,0 +1,5 @@
+name:    Custom Scene (template)
+version: 0.1
+author:  dazashu
+desc:    Adds a brand-new in-game screen with a Window_Command.
+         Press F3 on the map to open the demo scene.

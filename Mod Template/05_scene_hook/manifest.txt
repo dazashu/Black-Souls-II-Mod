@@ -1,0 +1,5 @@
+name:    Scene Hook (template)
+version: 0.1
+author:  dazashu
+desc:    Hooks Scene_Map's start/update/terminate to draw an overlay sprite.
+         Shows your map ID and player coords in the top-left corner.

@@ -1,0 +1,6 @@
+name:    Admin Menu
+version: 0.1.0
+author:  dazashu
+desc:    Creative-mode toolkit. Hotkeys: F5 max-lvl, F6 max-stats, F7 max-gold,
+         F8 give-all, F9 overlay, F10 god, F11 noclip, F12 no-encounters,
+         hold Shift = triple speed.
