@@ -25,7 +25,7 @@ A full in-game admin / creative menu. Press **F2** in-game to open it. Features:
 - Skill teaching
 - Bonfire-map teleport
 - Toggles: god mode, disable battles, no-clip, one-shot, always-crit, always-run, infinite souls, speed boost
-- Misc: set switch by ID, set variable by ID, teleport to the Reminiscence Room, open BS2's bonfire travel scene
+- Misc: teleport to the Reminiscence Room, open BS2's bonfire travel scene
 
 ### `Mod Template/`
 
