@@ -1,5 +1,5 @@
 # =============================================================================
-# Creative Mode v1.0 — F2 creative-mode menu for Black Souls II
+# Creative Mode v1.0 - F2 creative-mode menu for Black Souls II
 # (Module name AdminMenu retained internally for compatibility with existing
 #  hooks; only the user-facing labels say "Creative Mode".)
 # =============================================================================
@@ -65,7 +65,7 @@ module AdminMenu
       drain_switch_queue
     end
 
-    # Queued switch flips — drained one per frame on Scene_Map so autorun
+    # Queued switch flips - drained one per frame on Scene_Map so autorun
     # events with newly-met conditions fire individually instead of as a
     # 30+-event simultaneous cascade (which crashes BS2 hard).
     @pending_switches = []
@@ -309,7 +309,7 @@ module AdminMenu
     end
 
     # ---------- H-scene gallery: find recall/scene unlock switches by name ---
-    # Narrow patterns only — generic words like "scene"/"memory"/"解放" match
+    # Narrow patterns only - generic words like "scene"/"memory"/"解放" match
     # hundreds of unrelated story switches and freeze the game when bulk-flipped.
     HSCENE_PATTERNS = ["回想", "思い出", "ぺろぺろ", "ｈシーン", "hシーン"].freeze
     HSCENE_HARD_CAP = 100  # if more matches than this, abort and report
@@ -384,7 +384,7 @@ module AdminMenu
 end
 
 # =============================================================================
-# VirtualScroll — mixin that turns a Window_Selectable into a virtual list.
+# VirtualScroll - mixin that turns a Window_Selectable into a virtual list.
 # Only the visible viewport is drawn into the bitmap; scrolling redraws.
 # Avoids RGSS3's bitmap size limit (~8192 px tall) on lists with 1000+ items
 # (NPC teleport, item picker, skill list, etc.) which otherwise either fail
@@ -469,7 +469,7 @@ module VirtualScroll
 end
 
 # =============================================================================
-# Window_AdminNumberInput — modal numeric input
+# Window_AdminNumberInput - modal numeric input
 # =============================================================================
 class Window_AdminNumberInput < Window_Base
   def initialize
@@ -556,7 +556,7 @@ class Window_AdminNumberInput < Window_Base
 end
 
 # =============================================================================
-# Window_AdminHelp — top banner
+# Window_AdminHelp - top banner
 # =============================================================================
 class Window_AdminHelp < Window_Base
   def initialize
@@ -584,7 +584,7 @@ class Window_AdminHelp < Window_Base
 end
 
 # =============================================================================
-# Window_AdminCmd — left category list
+# Window_AdminCmd - left category list
 # =============================================================================
 class Window_AdminCmd < Window_Command
   def initialize(x, y, height)
@@ -599,7 +599,7 @@ class Window_AdminCmd < Window_Command
 end
 
 # =============================================================================
-# Window_AdminSub — right action list
+# Window_AdminSub - right action list
 # =============================================================================
 class Window_AdminSub < Window_Command
   # NOTE: deliberately NOT mixing in VirtualScroll. The mixin's refresh
@@ -650,7 +650,7 @@ class Window_AdminSub < Window_Command
 end
 
 # =============================================================================
-# Window_AdminItemCategory — top of items pane
+# Window_AdminItemCategory - top of items pane
 # =============================================================================
 class Window_AdminItemCategory < Window_HorzCommand
   attr_accessor :on_change
@@ -677,7 +677,7 @@ class Window_AdminItemCategory < Window_HorzCommand
 end
 
 # =============================================================================
-# Window_AdminItemList — selectable list with icons + count
+# Window_AdminItemList - selectable list with icons + count
 # =============================================================================
 class Window_AdminItemList < Window_Selectable
   include VirtualScroll
@@ -711,7 +711,7 @@ class Window_AdminItemList < Window_Selectable
 end
 
 # =============================================================================
-# Window_AdminSkillList — selectable skills with icons + already-known marker
+# Window_AdminSkillList - selectable skills with icons + already-known marker
 # =============================================================================
 class Window_AdminSkillList < Window_Selectable
   include VirtualScroll
@@ -761,7 +761,7 @@ class Scene_AdminMenu < Scene_MenuBase
     create_item_windows
     create_skill_windows
     create_number_window
-    # Don't pre-populate any category — keep the right pane empty until the
+    # Don't pre-populate any category - keep the right pane empty until the
     # user actually picks one. Eliminates the scene-open lag spike.
     show_sub_pane
     @command_window.activate
@@ -853,7 +853,7 @@ class Scene_AdminMenu < Scene_MenuBase
     end
   end
 
-  # Explicit flag — DON'T rely on @number_window.openness or .active. The
+  # Explicit flag - DON'T rely on @number_window.openness or .active. The
   # window's openness comes back > 0 even before any prompt is opened (BS2's
   # Window machinery, probably), causing false positives that left sub_window
   # deactivated forever and made the menu look frozen.
@@ -1188,7 +1188,7 @@ class Scene_AdminMenu < Scene_MenuBase
       end
     end
 
-    # Note: "Add actor to party" was removed — BS2's status display windows
+    # Note: "Add actor to party" was removed - BS2's status display windows
     # (Window_KisekiStatus etc.) crash with FloatDomainError on actors that
     # aren't fully initialized for the current game state. The crash happens
     # AFTER add_actor returns (when BS2's UI tries to redraw), so begin/rescue
@@ -1196,7 +1196,7 @@ class Scene_AdminMenu < Scene_MenuBase
     list
   end
 
-  # ONE flat list — Maps section, then NPCs section, with disabled section
+  # ONE flat list - Maps section, then NPCs section, with disabled section
   # headers. No submode/back-button machinery (which was crashing in BS2's
   # customized Window_Command). Esc on the sub_window exits to the main menu.
   # Flat list of BS2's bonfire map locations only. NPC/character teleport
@@ -1312,7 +1312,7 @@ rescue => e
   ModLoader.log("[admin] Scene_Map.update hook failed: #{e.message}") rescue nil
 end
 
-# Disable battles — two-layer hook.
+# Disable battles - two-layer hook.
 #
 # Layer 1: Game_Interpreter#command_301 (Battle Processing in events). Vanilla
 # does BattleManager.setup -> SceneManager.call(Scene_Battle) -> Fiber.yield.
