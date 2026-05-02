@@ -16,7 +16,7 @@ Drop any of these folders into `BLACK SOULS II/Mods/` after the loader is instal
 
 ## What's in here
 
-### `creative_mode/`
+### `creative_mode`
 
 A full in-game admin / creative menu. Press **F2** in-game to open it. Features:
 
@@ -26,6 +26,10 @@ A full in-game admin / creative menu. Press **F2** in-game to open it. Features:
 - Bonfire-map teleport
 - Toggles: god mode, disable battles, no-clip, one-shot, always-crit, always-run, infinite souls, speed boost
 - Misc: teleport to the Reminiscence Room, open BS2's bonfire travel scene
+
+### `All_H_Scene`
+
+A mod that unlock all scene in the Reminiscence Room.
 
 ### `Mod Template/`
 
