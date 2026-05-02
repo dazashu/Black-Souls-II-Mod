@@ -16,6 +16,16 @@ Drop any of these folders into `BLACK SOULS II/Mods/` after the loader is instal
 
 ## What's in here
 
+### `Ultra_Quality/`
+
+Press **F3** in-game to open. Display / visual quality menu:
+
+- Fullscreen toggle (Alt+Enter)
+- Window scale 1x / 2x / 3x (resizes the OS window)
+- Tone presets: Cinematic / Vibrant / Soft / Dark / Off
+- Brightness adjust
+- Settings persist across launches via `Ultra_Quality/settings.txt`
+
 ### `creative_mode/`
 
 A full in-game admin / creative menu. Press **F2** in-game to open it. Features:

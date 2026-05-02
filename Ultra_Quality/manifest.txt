@@ -1,0 +1,4 @@
+name:    Ultra Quality
+version: 1.0.0
+author:  dazashu
+desc:    F3 menu for fullscreen, window scaling, and visual presets.
