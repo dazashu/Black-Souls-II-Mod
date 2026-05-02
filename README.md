@@ -8,9 +8,9 @@ Drop any of these folders into `BLACK SOULS II/Mods/` after the loader is instal
 
 ## Companion repos
 
-- 🔧 [Black-Souls-II-Mod-Loader](https://github.com/dazashu/Black-Souls-II-Mod-Loader) — runtime mod loader (install this first)
-- 📦 [Black-Souls-II-Asset-Extractor](https://github.com/dazashu/Black-Souls-II-Asset-Extractor) — extract / repack `Game.rgss3a`
-- 📚 [Black-Souls-II-docs](https://github.com/dazashu/Black-Souls-II-docs) — documentation site source
+- 🔧 [Black-Souls-II-Mod-Loader](https://github.com/dazashu/Black-Souls-II-Mod-Loader) - runtime mod loader (install this first)
+- 📦 [Black-Souls-II-Asset-Extractor](https://github.com/dazashu/Black-Souls-II-Asset-Extractor) - extract / repack `Game.rgss3a`
+- 📚 [Black-Souls-II-docs](https://github.com/dazashu/Black-Souls-II-docs) - documentation site source
 
 ---
 
@@ -46,10 +46,12 @@ Copy any template into `BLACK SOULS II/Mods/<your_mod_name>/` and edit `main.rb`
 ## Installation
 
 1. Install the [Mod Loader](https://github.com/dazashu/Black-Souls-II-Mod-Loader) first.
-2. Copy a mod folder from this repo into `BLACK SOULS II/Mods/`.
-3. Launch the game.
+2. Download creative_mode.zip from the releases.
+3. Unzip the file.
+4. Place it in your mods folder that the Mod Loader generated in the game files. It should look like `BLACK SOULS II/Mods/creative_mode`
+5. Launch the game.
 
-Each mod is self-contained — drop in the folder, that's it.
+Each mod is self-contained - drop in the folder, that's it.
 
 ---
 
