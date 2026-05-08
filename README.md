@@ -27,7 +27,7 @@ A full in-game admin / creative menu. Press **F2** in-game to open it. Features:
 - Toggles: god mode, disable battles, no-clip, one-shot, always-crit, always-run, infinite souls, speed boost
 - Misc: teleport to the Reminiscence Room, open BS2's bonfire travel scene
 
-### `All_H_Scene`
+### `All_Scene`
 
 A mod that unlock all scene in the Reminiscence Room.
 
