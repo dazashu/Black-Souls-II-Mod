@@ -1,4 +1,4 @@
-name:    All H-Scene
+name:    All Scene
 version: 1.0.0
 author:  dazashu
 desc:    Displays every scene as unlocked in the Reminiscence Room.
